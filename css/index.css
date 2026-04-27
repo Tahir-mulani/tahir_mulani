@@ -234,6 +234,7 @@ nav a:hover {
   border-radius: 25px;
   font-weight: 500;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .skill-tag:hover {
