@@ -229,35 +229,107 @@ nav a:hover {
 }
 
 .skills-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  max-width: 800px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
+.skill-category {
+  background: linear-gradient(180deg, rgba(37, 99, 235, 0.08), rgba(37, 99, 235, 0.02));
+  border: 1px solid rgba(37, 99, 235, 0.15);
+  border-radius: 20px;
+  padding: 1.5rem;
+  text-align: left;
+  box-shadow: var(--shadow);
+}
+
+.skill-category h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: var(--secondary-color);
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
 .skill-tag {
-  padding: 0.8rem 1.5rem;
-  background: linear-gradient(
-    135deg,
-    var(--primary-color),
-    var(--secondary-color)
-  );
+  padding: 0.75rem 1rem;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
   color: var(--white);
-  border-radius: 25px;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
 }
 
 .skill-tag:hover {
-  transform: scale(1.05);
-  box-shadow: 0 5px 15px rgba(37, 99, 235, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+}
+
+#education,
+#certifications {
+  padding: 6rem 2rem;
+  background-color: var(--light-color);
+}
+
+#education h2,
+#certifications h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+.education-container,
+.certification-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.education-card,
+.cert-card {
+  background: var(--white);
+  border-radius: 18px;
+  padding: 1.75rem;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.education-card h3,
+.cert-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.75rem;
+}
+
+.education-card p,
+.cert-card p {
+  margin-bottom: 0.5rem;
+  color: var(--dark-color);
+  line-height: 1.6;
+}
+
+.cert-card a {
+  display: inline-block;
+  margin-top: 0.75rem;
+  color: var(--white);
+  background-color: var(--primary-color);
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cert-card a:hover {
+  background-color: var(--secondary-color);
 }
 
 /* Projects Section */
@@ -325,6 +397,7 @@ nav a:hover {
 
 /* Contact Section */
 #contact {
+  margin-top: 10px;
   padding: 4rem 2rem;
   background: linear-gradient(
     135deg,
