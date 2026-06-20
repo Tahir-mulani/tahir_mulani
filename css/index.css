@@ -328,7 +328,8 @@ nav a:hover {
 }
 
 .skill-card.spring-core:hover i,
-.skill-card.spring-jdbc:hover i {
+.skill-card.spring-jdbc:hover i,
+.skill-card.spring-mvc:hover i {
   color: #6db33f;
 }
 
