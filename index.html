@@ -3,29 +3,31 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Tahir mulani Portfolio</title>
+    <title>Tahir Mulani | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Modern portfolio of Tahir Mulani, a passionate software engineer." />
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%232563eb'/><text x='50' y='68' font-size='50' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'>TM</text></svg>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./css/index.css">
-
 </head>
 
 <body>
-
     <header>
-        <div class="header-content">
-            <h1>Tahir Mulani</h1>
-            <p>Passionate Software Engineer</p>
-        </div>
+        <a href="#hero" class="brand">
+            <span class="brand-mark">TM</span>
+            <div>
+                <strong>Tahir Mulani</strong>
+                <small>Software Engineer</small>
+            </div>
+        </a>
         <nav class="menu">
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
-        <div class="hamburger">
+        <div class="hamburger" aria-label="Toggle navigation">
             <span></span>
             <span></span>
             <span></span>
@@ -33,207 +35,240 @@
     </header>
 
     <section id="hero">
-        <div class="hero-content">
-            <h2>Hello, I'm <span class="highlight">Tahir Mulani</span></h2>
-            <p class="hero-subtitle">Passionate Software Engineer</p>
-            <p class="hero-text">
-                Building innovative solutions with clean code and creative thinking.
-                Let's turn ideas into reality.
-            </p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-outline">Contact Me</a>
-                <a href="./assets/Tahir Mulani Resume.pdf" class="btn btn-download" download>Download Resume</a>
+        <div class="hero-grid">
+            <div class="hero-content">
+                <span class="hero-badge"><i class="fas fa-rocket"></i> Available for new opportunities</span>
+                <h2>Hello, I'm <span class="highlight">Tahir Mulani</span></h2>
+                <p class="hero-subtitle">Passionate software engineer building modern digital experiences</p>
+                <p class="hero-text">
+                    I create thoughtful web solutions with clean code, polished interfaces, and a strong focus on user experience.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                    <a href="./assets/Tahir Mulani Resume.pdf" class="btn btn-download" download>Download Resume</a>
+                </div>
+                <div class="hero-stats">
+                    <div>
+                        <strong>2+</strong>
+                        <span>Years learning</span>
+                    </div>
+                    <div>
+                        <strong>15+</strong>
+                        <span>Projects explored</span>
+                    </div>
+                    <div>
+                        <strong>100%</strong>
+                        <span>Curiosity-driven</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-panel">
+                <div class="panel-card">
+                    <p class="panel-label">Current focus</p>
+                    <h3>Full-stack development & modern web</h3>
+                    <ul>
+                        <li>Java, Spring, and databases</li>
+                        <li>Responsive UI with HTML, CSS, and JavaScript</li>
+                        <li>Reliable builds and clean architecture</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-card java">
-                <i class="fab fa-java"></i>
-                <span>Java 8</span>
-            </div>
-            <div class="skill-card sql-plsql">
-                <i class="fas fa-database"></i>
-                <span>SQL/PLSQL</span>
-            </div>
-            <div class="skill-card html5">
-                <i class="fab fa-html5"></i>
-                <span>HTML5</span>
-            </div>
-            <div class="skill-card css3">
-                <i class="fab fa-css3-alt"></i>
-                <span>CSS3</span>
-            </div>
-            <div class="skill-card bootstrap5">
-                <i class="fab fa-bootstrap"></i>
-                <span>BooStrap5</span>
-            </div>
-            <div class="skill-card javascript">
-                <i class="fab fa-js"></i>
-                <span>JavaScript</span>
-            </div>
-            <div class="skill-card jdbc">
-                <i class="fas fa-code"></i>
-                <span>JDBC</span>
-            </div>
-            <div class="skill-card servlet">
-                <i class="fas fa-server"></i>
-                <span>Servlet</span>
-            </div>
-            <div class="skill-card postman">
-                <i class="fab fa-postman"></i>
-                <span>Postman</span>
-            </div>
-            <div class="skill-card spring">
-                <i class="fas fa-leaf"></i>
-                <span>Spring</span>
-            </div>
-            <div class="skill-card git">
-                <i class="fab fa-git-alt"></i>
-                <span>Git</span>
-            </div>
-            <div class="skill-card github">
-                <i class="fab fa-github"></i>
-                <span>GitHub</span>
-            </div>
-            <div class="skill-card maven">
-                <i class="fas fa-cogs"></i>
-                <span>Maven</span>
-            </div>
-            <div class="skill-card lombok">
-                <i class="fas fa-feather"></i>
-                <span>Lombok</span>
-            </div>
-            <div class="skill-card eclipse">
-                <i class="fas fa-circle-notch"></i>
-                <span>Eclipse</span>
-            </div>
-            <div class="skill-card vscode">
-                <i class="fas fa-laptop-code"></i>
-                <span>VS Code</span>
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card java">
+                    <i class="fab fa-java"></i>
+                    <span>Java 8</span>
+                </div>
+                <div class="skill-card sql-plsql">
+                    <i class="fas fa-database"></i>
+                    <span>SQL/PLSQL</span>
+                </div>
+                <div class="skill-card html5">
+                    <i class="fab fa-html5"></i>
+                    <span>HTML5</span>
+                </div>
+                <div class="skill-card css3">
+                    <i class="fab fa-css3-alt"></i>
+                    <span>CSS3</span>
+                </div>
+                <div class="skill-card bootstrap5">
+                    <i class="fab fa-bootstrap"></i>
+                    <span>BooStrap5</span>
+                </div>
+                <div class="skill-card javascript">
+                    <i class="fab fa-js"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill-card jdbc">
+                    <i class="fas fa-code"></i>
+                    <span>JDBC</span>
+                </div>
+                <div class="skill-card servlet">
+                    <i class="fas fa-server"></i>
+                    <span>Servlet</span>
+                </div>
+                <div class="skill-card postman">
+                    <i class="fab fa-postman"></i>
+                    <span>Postman</span>
+                </div>
+                <div class="skill-card spring">
+                    <i class="fas fa-leaf"></i>
+                    <span>Spring</span>
+                </div>
+                <div class="skill-card git">
+                    <i class="fab fa-git-alt"></i>
+                    <span>Git</span>
+                </div>
+                <div class="skill-card github">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </div>
+                <div class="skill-card maven">
+                    <i class="fas fa-cogs"></i>
+                    <span>Maven</span>
+                </div>
+                <div class="skill-card lombok">
+                    <i class="fas fa-feather"></i>
+                    <span>Lombok</span>
+                </div>
+                <div class="skill-card eclipse">
+                    <i class="fas fa-circle-notch"></i>
+                    <span>Eclipse</span>
+                </div>
+                <div class="skill-card vscode">
+                    <i class="fas fa-laptop-code"></i>
+                    <span>VS Code</span>
+                </div>
             </div>
         </div>
     </section>
 
-
     <section id="certifications">
-        <h2>Certifications</h2>
-        <div class="certification-container">
-            <div class="cert-card">
-                <h3>Java Fullstack Development</h3>
-                <p>Giri's Tech Hub Pune</p>
-                <p><em>July 2025 - ongoing</em></p>
-                <a href="#" target="_blank">View Certificate</a>
-            </div>
-            <div class="cert-card">
-                <h3>Microsoft Excel</h3>
-                <p>Coursera</p>
-                <p>March 2026</p>
-                <a href="https://www.coursera.org/account/accomplishments/verify/7JA5XCJ1J8QG" target="_blank">View
-                    Certificate</a>
-            </div>
-            <div class="cert-card">
-                <h3>AI Tool Workshop</h3>
-                <p>Be10X</p>
-                <p>August 2025</p>
-                <a href="https://certx.in/certificate/0270772f-3809-4400-b29b-1e1c61cd0997558027" target="_blank">View
-                    Certificate</a>
+        <div class="container">
+            <h2>Certifications</h2>
+            <div class="certification-container">
+                <div class="cert-card">
+                    <h3>Java Fullstack Development</h3>
+                    <p>Giri's Tech Hub Pune</p>
+                    <p><em>July 2025 - ongoing</em></p>
+                    <a href="#" target="_blank">View Certificate</a>
+                </div>
+                <div class="cert-card">
+                    <h3>Microsoft Excel</h3>
+                    <p>Coursera</p>
+                    <p>March 2026</p>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/7JA5XCJ1J8QG" target="_blank">View Certificate</a>
+                </div>
+                <div class="cert-card">
+                    <h3>AI Tool Workshop</h3>
+                    <p>Be10X</p>
+                    <p>August 2025</p>
+                    <a href="https://certx.in/certificate/0270772f-3809-4400-b29b-1e1c61cd0997558027" target="_blank">View Certificate</a>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="about">
-        <div class="about-content">
-            <h2>About Me</h2>
-            <p>
-                Computer Science graduate eager to gain practical experience and develop my skills. I aim to contribute
-                to the team while growing my career and continuously learning, improving, and adapting to new
-                challenges.
-            </p>
-            <div class="education-summary">
-                <h4>Education Background</h4>
-                <p><strong>Master's in Computer Application:</strong> (2025 - 2027 Pursuing) Bharati Vidyapeeth Sangli
+        <div class="container about-grid">
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>
+                    Computer Science graduate eager to gain practical experience and grow my skills. I aim to contribute to a team while continuously learning, improving, and adapting to new challenges.
                 </p>
-                <p><strong>Bachelor's of Science (Computer Science):</strong> (2022 -2025) BVDPKM Sangli | CGPA: 7.54 |
-                    63.84%</p>
+                <div class="education-summary">
+                    <h4>Education Background</h4>
+                    <p><strong>Master's in Computer Application:</strong> (2025 - 2027 Pursuing) Bharati Vidyapeeth Sangli</p>
+                    <p><strong>Bachelor's of Science (Computer Science):</strong> (2022 - 2025) BVDPKM Sangli | CGPA: 7.54 | 63.84%</p>
+                </div>
+                <a href="#contact" class="btn">Get In Touch</a>
             </div>
-            <a href="#contact" class="btn">Get In Touch</a>
-        </div>
-        <div class="about-image">
-            <img src="assets/Tahir Image.png" alt="Tahir Mulani">
+            <div class="about-image">
+                <img src="assets/Tahir Image.png" alt="Tahir Mulani">
+            </div>
         </div>
     </section>
 
     <section id="projects">
-        <h2>Projects</h2>
-
-        <div class="projects">
-
-            <div class="card">
-                <h3>Civil Registry</h3>
-                <p>ASP.NET Web Application</p>
-                <a href="https://github.com/Tahir-mulani/Civil-Registry">GitHub</a>
-            </div>
-            <div class="card">
-                <h3>Prime Events</h3>
-                <p>Events Orgnizers</p>
-                <a href="https://primeevents-smoky.vercel.app/">Live Demo</a>
-            </div>
-            <div class="card">
-                <h3>Portfolio</h3>
-                <p>Personal portfolio website</p>
-                <a href="https://tahir-mulani-ten.vercel.app/">Live Demo</a>
-            </div>
-            <div class="card">
-                <h3>Student Management System</h3>
-                <p>Console Based Application</p>
-                <a href="https://github.com/Tahir-mulani/Student-Management-System">GitHub</a>
-            </div>
-            <div class="card">
-                <h3>Airline System</h3>
-                <p>Desktop Application</p>
-                <a href="https://github.com/Tahir-mulani">GitHub</a>
-            </div>
-            <div class="card">
-                <h3>TestSync</h3>
-                <p>Online Examination System</p>
-                <a href="https://github.com/Tahir-mulani/TestSync">GitHub</a>
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="card">
+                    <span class="project-tag">Web App</span>
+                    <h3>Civil Registry</h3>
+                    <p>ASP.NET web application for structured record management.</p>
+                    <a href="https://github.com/Tahir-mulani/Civil-Registry">GitHub</a>
+                </div>
+                <div class="card">
+                    <span class="project-tag">Frontend</span>
+                    <h3>Prime Events</h3>
+                    <p>Event organizers landing experience built for modern audiences.</p>
+                    <a href="https://primeevents-smoky.vercel.app/">Live Demo</a>
+                </div>
+                <div class="card">
+                    <span class="project-tag">Portfolio</span>
+                    <h3>Portfolio</h3>
+                    <p>Personal portfolio website focused on clarity and visual flow.</p>
+                    <a href="https://tahir-mulani-ten.vercel.app/">Live Demo</a>
+                </div>
+                <div class="card">
+                    <span class="project-tag">Console App</span>
+                    <h3>Student Management System</h3>
+                    <p>Console-based application for managing student records.</p>
+                    <a href="https://github.com/Tahir-mulani/Student-Management-System">GitHub</a>
+                </div>
+                <div class="card">
+                    <span class="project-tag">Desktop</span>
+                    <h3>Airline System</h3>
+                    <p>Desktop application for handling airline-related operations.</p>
+                    <a href="https://github.com/Tahir-mulani">GitHub</a>
+                </div>
+                <div class="card">
+                    <span class="project-tag">System</span>
+                    <h3>TestSync</h3>
+                    <p>Online examination system designed for smooth test-taking.</p>
+                    <a href="https://github.com/Tahir-mulani/TestSync">GitHub</a>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="contact">
-        <h2>Contact Me</h2>
-        <div class="contact-container">
-            <div class="contact-item">
-                <i class="fas fa-envelope contact-icon"></i>
-                <p>tahirmulani7447@email.com</p>
-            </div>
-            <div class="contact-item">
-                <i class="fas fa-phone contact-icon"></i>
-                <p>+91 7083560700</p>
-            </div>
-            <div class="contact-item">
-                <i class="fas fa-map-marker-alt contact-icon"></i>
-                <p>Pune-411058</p>
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-container">
+                <div class="contact-item">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <p>tahirmulani7447@email.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone contact-icon"></i>
+                    <p>+91 7083560700</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt contact-icon"></i>
+                    <p>Pune-411058</p>
+                </div>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>© 2026 Tahir Mulani All rights reserved.</p>
+        <p>© 2026 Tahir Mulani. All rights reserved.</p>
         <div class="social-links">
-            <a href="https://www.linkedin.com/in/tahir-mulani-622152324/" target="_blank"><i
-                    class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://www.linkedin.com/in/tahir-mulani-622152324/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
             <a href="https://github.com/Tahir-mulani" target="_blank"><i class="fab fa-github"></i> GitHub</a>
         </div>
     </footer>
 
     <script>
-        // Hamburger menu toggle
         const hamburger = document.querySelector('.hamburger');
         const menu = document.querySelector('.menu');
 
@@ -241,14 +276,12 @@
             menu.classList.toggle('active');
         });
 
-        // Close menu when clicking a link
         document.querySelectorAll('.menu a').forEach(link => {
             link.addEventListener('click', () => {
                 menu.classList.remove('active');
             });
         });
     </script>
-
 </body>
 
 </html>
