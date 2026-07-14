@@ -379,6 +379,7 @@ nav a:hover {
 .skill-card.servlet:hover i { color: #6db33f; }
 .skill-card.postman:hover i { color: #ff6c37; }
 .skill-card.spring:hover i { color: #6db33f; }
+.skill-card.spring-boot:hover i { color: #6db33f; }
 .skill-card.git:hover i { color: #f05032; }
 .skill-card.github:hover i { color: #181717; }
 .skill-card.maven:hover i { color: #d54c21; }
