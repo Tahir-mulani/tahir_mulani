@@ -386,6 +386,7 @@ nav a:hover {
 .skill-card.lombok:hover i { color: #79b043; }
 .skill-card.eclipse:hover i { color: #2c2255; }
 .skill-card.vscode:hover i { color: #007acc; }
+.skill-card.notepadpp:hover i { color: #4a4a4a; }
 
 #certifications {
   background: linear-gradient(135deg, #e0f2fe 0%, #fdf2f8 100%);
