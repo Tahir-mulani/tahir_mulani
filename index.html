@@ -6,6 +6,9 @@
     <title>Tahir Mulani | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Modern portfolio of Tahir Mulani, a passionate software engineer." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%232563eb'/><text x='50' y='68' font-size='50' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'>TM</text></svg>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -21,17 +24,17 @@
                 <small>Software Engineer</small>
             </div>
         </a>
-        <nav class="menu">
+        <nav class="menu" aria-label="Primary navigation">
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
-        <div class="hamburger" aria-label="Toggle navigation">
+        <button class="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false">
             <span></span>
             <span></span>
             <span></span>
-        </div>
+        </button>
     </header>
 
     <section id="hero">
@@ -47,19 +50,20 @@
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">View My Work</a>
                     <a href="#contact" class="btn btn-outline">Contact Me</a>
-                    <a href="./assets/Master's Resume(Spring boot).pdf" class="btn btn-download" download>Download Resume</a>
+                    <a href="./assets/Master's Resume(Spring boot).pdf" class="btn btn-download" download>Download
+                        Resume</a>
                 </div>
                 <div class="hero-stats">
                     <div>
-                        <strong>2+</strong>
+                        <strong>1+</strong>
                         <span>Years learning</span>
                     </div>
                     <div>
-                        <strong>15+</strong>
+                        <strong>5+</strong>
                         <span>Projects explored</span>
                     </div>
                     <div>
-                        <strong>100%</strong>
+                        <strong>80%</strong>
                         <span>Curiosity-driven</span>
                     </div>
                 </div>
@@ -254,38 +258,103 @@
                     <span class="project-tag">Spring Boot</span>
                     <h3>Smart Career Recommendation System</h3>
                     <p>Spring Boot application recommending career paths based on student profiles.</p>
-                    <a href="https://github.com/prathameshvhare/SpringBootProject" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://github.com/prathameshvhare/SpringBootProject" target="_blank"
+                        rel="noopener noreferrer">GitHub</a>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
+        <div class="container contact-layout">
+            <div class="contact-intro">
+                <p class="section-kicker">Start a conversation</p>
+                <h2>Let's make your next idea useful.</h2>
+                <p>Whether you are building a web experience or improving an existing product, I would be glad to hear about it.</p>
+            </div>
             <div class="contact-container">
+                <a class="contact-item" href="mailto:tahirmulani7447@email.com">
+                    <i class="fas fa-envelope contact-icon" aria-hidden="true"></i>
+                    <span><small>Email</small>tahirmulani7447@email.com</span>
+                </a>
+                <a class="contact-item" href="tel:+917083560700">
+                    <i class="fas fa-phone contact-icon" aria-hidden="true"></i>
+                    <span><small>Phone</small>+91 7083560700</span>
+                </a>
                 <div class="contact-item">
-                    <i class="fas fa-envelope contact-icon"></i>
-                    <p>tahirmulani7447@email.com</p>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-phone contact-icon"></i>
-                    <p>+91 7083560700</p>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-map-marker-alt contact-icon"></i>
-                    <p>Pune-411058</p>
+                    <i class="fas fa-map-marker-alt contact-icon" aria-hidden="true"></i>
+                    <span><small>Based in</small>Pune-411058</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <p>© 2026 Tahir Mulani. All rights reserved.</p>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/tahir-mulani-622152324/" target="_blank"><i
-                    class="fab fa-linkedin"></i> LinkedIn</a>
-            <a href="https://github.com/Tahir-mulani" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-cta">
+                <div>
+                    <p class="footer-eyebrow">Have a project in mind?</p>
+                    <h2>Let's build something great together.</h2>
+                </div>
+                <a class="footer-cta-button" href="#contact">Let's Talk <span aria-hidden="true">→</span></a>
+            </div>
+
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#hero" class="brand footer-brand-link">
+                        <span class="brand-mark">TM</span>
+                        <span>
+                            <strong>Tahir Mulani</strong>
+                            <small>Software Engineer</small>
+                        </span>
+                    </a>
+                    <p>Building thoughtful digital experiences with clean code and a focus on people.</p>
+                </div>
+
+                <nav class="footer-column" aria-label="Footer navigation">
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#certifications">Certifications</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-column">
+                    <h3>Expertise</h3>
+                    <ul>
+                        <li><span>Java &amp; Spring Boot</span></li>
+                        <li><span>Responsive UI</span></li>
+                        <li><span>SQL &amp; PL/SQL</span></li>
+                        <li><span>Web Applications</span></li>
+                        <li><span>Clean Architecture</span></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column footer-contact">
+                    <h3>Get in touch</h3>
+                    <a href="mailto:tahirmulani7447@email.com"><i class="fas fa-envelope" aria-hidden="true"></i>
+                        tahirmulani7447@email.com</a>
+                    <a href="tel:+917083560700"><i class="fas fa-phone" aria-hidden="true"></i> +91 7083560700</a>
+                    <span><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Pune-411058</span>
+                    <div class="social-links" aria-label="Social links">
+                        <a href="https://www.linkedin.com/in/tahir-mulani-622152324/" target="_blank"
+                            rel="noopener noreferrer" aria-label="Visit Tahir Mulani on LinkedIn"><i
+                                class="fab fa-linkedin" aria-hidden="true"></i><span>LinkedIn</span></a>
+                        <a href="https://github.com/Tahir-mulani" target="_blank" rel="noopener noreferrer"
+                            aria-label="Visit Tahir Mulani on GitHub"><i class="fab fa-github"
+                                aria-hidden="true"></i><span>GitHub</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2026</span> Tahir Mulani. All rights reserved.</p>
+                <p>Designed &amp; built with care.</p>
+            </div>
         </div>
     </footer>
 
@@ -295,6 +364,7 @@
 
         hamburger.addEventListener('click', () => {
             menu.classList.toggle('active');
+            hamburger.setAttribute('aria-expanded', menu.classList.contains('active'));
         });
 
         document.querySelectorAll('.menu a').forEach(link => {
@@ -302,6 +372,8 @@
                 menu.classList.remove('active');
             });
         });
+
+        document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
 </body>
 
