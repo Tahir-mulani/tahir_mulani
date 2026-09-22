@@ -1638,3 +1638,135 @@ button:focus-visible {
     justify-content: center;
   }
 }
+
+/* Final visual system and responsive skill layout */
+:root {
+  --primary-color: #0f766e;
+  --secondary-color: #115e59;
+  --accent-color: #f59e0b;
+  --dark-color: #102a43;
+  --light-color: #f6f9fc;
+  --ink-muted: #52606d;
+  --border-color: #d9e2ec;
+  --surface-soft: #edf3f7;
+  --shadow: 0 18px 45px rgba(16, 42, 67, 0.09);
+  --shadow-hover: 0 22px 50px rgba(16, 42, 67, 0.14);
+}
+
+body {
+  background: var(--light-color);
+}
+
+#hero {
+  background: #102a43;
+}
+
+#hero::after {
+  border-color: rgba(20, 184, 166, 0.22);
+  box-shadow: 0 0 0 5rem rgba(20, 184, 166, 0.035), 0 0 0 10rem rgba(20, 184, 166, 0.02);
+}
+
+.hero-content .highlight,
+.hero-badge i,
+.hero-stats strong,
+.panel-card li::before,
+.footer-eyebrow,
+.section-kicker {
+  color: var(--accent-color);
+}
+
+#skills,
+#projects {
+  background: var(--light-color);
+}
+
+#certifications,
+#about {
+  background: var(--surface-soft);
+}
+
+.skills-grid {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.skill-card {
+  width: 100%;
+  min-height: 142px;
+  padding: 1.15rem 0.75rem;
+  border-color: var(--border-color);
+  border-radius: var(--radius-md);
+  background: #ffffff;
+}
+
+.skill-card i {
+  color: var(--primary-color);
+}
+
+.skill-card:hover {
+  border-color: rgba(15, 118, 110, 0.4);
+  box-shadow: var(--shadow);
+}
+
+.skill-card span {
+  line-height: 1.35;
+}
+
+.cert-card,
+.card,
+.about-content {
+  border-color: var(--border-color);
+}
+
+.cert-card h3,
+.card h3,
+.education-summary h4 {
+  color: var(--dark-color);
+}
+
+.cert-card a,
+.card a {
+  background: var(--primary-color);
+}
+
+.cert-card a:hover,
+.card a:hover {
+  background: var(--secondary-color);
+}
+
+#contact {
+  background: #102a43;
+}
+
+.contact-item:hover {
+  border-color: rgba(245, 158, 11, 0.65);
+  background: rgba(245, 158, 11, 0.08);
+}
+
+.site-footer {
+  background: #0b1f33;
+}
+
+@media (max-width: 1100px) {
+  .skills-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+
+  .skill-card {
+    min-height: 128px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
