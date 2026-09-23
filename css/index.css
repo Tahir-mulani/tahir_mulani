@@ -1770,3 +1770,109 @@ body {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+
+/* Shared alignment and footer layout */
+.container,
+.hero-grid {
+  width: min(100%, 1160px);
+  margin-inline: auto;
+}
+
+#skills,
+#certifications,
+#projects,
+#about,
+#contact {
+  width: 100%;
+}
+
+.footer-cta,
+.footer-grid,
+.footer-bottom {
+  width: 100%;
+}
+
+.footer-cta {
+  align-items: center;
+}
+
+.footer-grid {
+  grid-template-columns: minmax(0, 1.35fr) minmax(120px, 0.75fr) minmax(150px, 1fr) minmax(190px, 1.2fr);
+  align-items: start;
+}
+
+.footer-brand,
+.footer-column {
+  min-width: 0;
+}
+
+.footer-column h3 {
+  margin-top: 0;
+}
+
+.footer-column li,
+.footer-contact a,
+.footer-contact span {
+  overflow-wrap: anywhere;
+}
+
+.contact-layout {
+  width: 100%;
+}
+
+@media (max-width: 1100px) {
+  .footer-grid {
+    grid-template-columns: 1.25fr 0.8fr 0.9fr 1.15fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container,
+  .hero-grid {
+    width: 100%;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-brand {
+    grid-column: auto;
+  }
+}
+
+/* Unified dark section backgrounds */
+body {
+  background: #0b1f33;
+}
+
+#hero,
+#skills,
+#certifications,
+#projects,
+#about,
+#contact,
+.site-footer {
+  background: #0b1f33;
+}
+
+#skills h2,
+#certifications h2,
+#projects h2,
+#about h2 {
+  color: var(--white);
+}
+
+#skills h2::after,
+#certifications h2::after,
+#projects h2::after {
+  background: var(--accent-color);
+}
